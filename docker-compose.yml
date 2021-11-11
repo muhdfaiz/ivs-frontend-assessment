@@ -1,0 +1,12 @@
+version: '3'
+services:
+    web:
+        build:
+          context: .
+          dockerfile: Dockerfile
+        container_name: ivs-frontend-assessment
+        restart: always
+        volumes:
+            - "./src:/var/www/ivs-frontend-assessment/"
+        ports:
+            - "8001:81"

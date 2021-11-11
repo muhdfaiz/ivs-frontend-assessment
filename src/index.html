@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/app.css">
+    <title>IVS Frontend Assessment</title>
+</head>
+<body>
+    <div id="spinner" class="spinner" onClick="hideSpinner()"></div>
+    <div id="flare-1" class="flare"><img src="/img/flare-1.png"></div>
+    <div id="flare-2" class="flare"><img src="/img/flare-2.png"></div>
+    <div id="flare-3" class="flare"><img src="/img/flare-3.png"></div>
+    <div id="flare-4" class="flare"><img src="/img/flare-4.png"></div>
+
+    <div class="container">
+        <div class="logo">
+            <img alt="logo" class="logo" src="/img/logo.svg">
+        </div>
+
+        <h1 class="title">Event Registration</h1>
+        <br>
+
+        <div class="row">
+            <div class="column col-6">
+                <div class="alert alert-success" role="alert" style="display: none">
+                    Successfully Registered!
+                </div>
+                <div class="alert alert-danger" role="alert" style="display: none">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column col-6">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <div>
+                        <input type="text" id="name" name="name" placeholder="Enter name">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column col-6">
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <div>
+                        <input type="email" id="email" name="email" placeholder="Enter email">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <button id="register" onclick="showSpinner()">Register</button>
+            </div>
+        </div>
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+</html>
